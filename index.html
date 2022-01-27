@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sample Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style>
+         form {
+             max-width: 300px;
+             border: 1px solid red;
+             margin: auto;
+         }
+
+         input {
+             display: block;
+             margin-bottom: .5rem;
+         }
+    </style>
+</head>
+
+<body>
+    <!-- Put HTML Here -->
+    <form action="">
+        <input type="email">
+        <input type="password">
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        (function() {
+            "use strict";
+
+            function triggerPopup() {
+                const button = document.getElementById("fx-relay-button");
+                button.click();
+                console.log(button);
+            }
+
+            setTimeout(triggerPopup, 200);
+            
+            
+        })();
+    </script>
+</body>
+
+</html>
